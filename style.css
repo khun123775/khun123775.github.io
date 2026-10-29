@@ -21,3 +21,27 @@ nav a {
 nav a:hover {
     color: #93c5fd;
 }
+
+.epic-box {
+  background-color: #e8f4fd;
+  border-left: 6px solid #2196f3;
+  color: #1d3557;
+  padding: 15px 20px;
+  margin: 20px 0;
+  border-radius: 4px;
+  font-family: sans-serif;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+
+.epic-box h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #0b5ed7;
+}
+
+
+.epic-box p {
+  margin: 0;
+  line-height: 1.5;
+}
