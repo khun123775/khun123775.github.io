@@ -1,1 +1,20 @@
+[
+  {
+    "id": "project-001",
+    "title": "this website",
+    "description": "The website that collect my info and all of my project.",
+    "date": "2026-10-28",
+    "status": "In Progress",
+    "image": "",
+    "technologies": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "links": {
+      "demo": "",
+      "source": ""
+    }
+  }
+]
 
