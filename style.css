@@ -21,3 +21,46 @@ nav a {
 nav a:hover {
     color: #93c5fd;
 }
+
+/* Compact navigation clock */
+.nav-clock {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 6px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.nav-clock-flag {
+  font-size: 1rem;
+}
+
+.nav-clock-city {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  opacity: 0.75;
+}
+
+#nav-clock-time {
+  font-weight: 600;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+  .nav-clock {
+    gap: 4px;
+    padding: 5px 6px;
+    font-size: 0.78rem;
+  }
+
+  .nav-clock-city {
+    display: none;
+  }
+}
+
