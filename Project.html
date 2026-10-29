@@ -25,7 +25,70 @@
     </nav>
 
     <main>
-        
+
+          <script>
+
+    async function loadProjects() {
+
+      const container = document.getElementById("project-list");
+
+      try {
+
+        const response = await fetch("File/Project.json");
+
+        if (!response.ok) {
+
+          throw new Error("Could not load Project.json");
+
+        }
+
+        const projects = await response.json();
+
+        container.replaceChildren();
+
+        projects.forEach(project => {
+
+          const card = document.createElement("article");
+
+          card.className = "project-card";
+
+          const title = document.createElement("h2");
+
+          title.textContent = project.title;
+
+          const description = document.createElement("p");
+
+          description.textContent = project.description;
+
+          const status = document.createElement("p");
+
+          status.textContent = `Status: ${project.status}`;
+
+          card.append(title, description, status);
+
+          container.appendChild(card);
+
+        });
+
+      } catch (error) {
+
+        container.textContent =
+
+          "Unable to load projects. Please check Project.json.";
+
+        console.error(error);
+
+      }
+
+    }
+
+    loadProjects();
+
+  </script>
+
+</body>
+
+</html>
       
     </main>
 </body>
